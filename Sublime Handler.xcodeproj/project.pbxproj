@@ -17,6 +17,7 @@
 		C646061118551E6300844649 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64605F118551E6300844649 /* Cocoa.framework */; };
 		C646061918551E6300844649 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C646061718551E6300844649 /* InfoPlist.strings */; };
 		C646061C18551E6300844649 /* Sublime_HandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C646061B18551E6300844649 /* Sublime_HandlerTests.m */; };
+		C646062718551F3100844649 /* preferencesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C646062618551F3100844649 /* preferencesManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		C646061818551E6300844649 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C646061A18551E6300844649 /* Sublime_HandlerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sublime_HandlerTests.h; sourceTree = "<group>"; };
 		C646061B18551E6300844649 /* Sublime_HandlerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sublime_HandlerTests.m; sourceTree = "<group>"; };
+		C646062518551F3100844649 /* preferencesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = preferencesManager.h; sourceTree = "<group>"; };
+		C646062618551F3100844649 /* preferencesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = preferencesManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				C646060418551E6300844649 /* AppDelegate.m */,
 				C646060618551E6300844649 /* MainMenu.xib */,
 				C64605F818551E6300844649 /* Supporting Files */,
+				C646062518551F3100844649 /* preferencesManager.h */,
+				C646062618551F3100844649 /* preferencesManager.m */,
 			);
 			path = "Sublime Handler";
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 			files = (
 				C64605FE18551E6300844649 /* main.m in Sources */,
 				C646060518551E6300844649 /* AppDelegate.m in Sources */,
+				C646062718551F3100844649 /* preferencesManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
