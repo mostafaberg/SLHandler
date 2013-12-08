@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C64605F218551E6300844649 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64605F118551E6300844649 /* Cocoa.framework */; };
+		C64605FC18551E6300844649 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C64605FA18551E6300844649 /* InfoPlist.strings */; };
+		C64605FE18551E6300844649 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C64605FD18551E6300844649 /* main.m */; };
+		C646060218551E6300844649 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C646060018551E6300844649 /* Credits.rtf */; };
+		C646060518551E6300844649 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C646060418551E6300844649 /* AppDelegate.m */; };
+		C646060818551E6300844649 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C646060618551E6300844649 /* MainMenu.xib */; };
+		C646061018551E6300844649 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C646060F18551E6300844649 /* SenTestingKit.framework */; };
+		C646061118551E6300844649 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64605F118551E6300844649 /* Cocoa.framework */; };
+		C646061918551E6300844649 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C646061718551E6300844649 /* InfoPlist.strings */; };
+		C646061C18551E6300844649 /* Sublime_HandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C646061B18551E6300844649 /* Sublime_HandlerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C646061218551E6300844649 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C64605E618551E6200844649 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C64605ED18551E6200844649;
+			remoteInfo = "Sublime Handler";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C64605EE18551E6200844649 /* Sublime Handler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sublime Handler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C64605F118551E6300844649 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C64605F418551E6300844649 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C64605F518551E6300844649 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C64605F618551E6300844649 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C64605F918551E6300844649 /* Sublime Handler-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sublime Handler-Info.plist"; sourceTree = "<group>"; };
+		C64605FB18551E6300844649 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C64605FD18551E6300844649 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C64605FF18551E6300844649 /* Sublime Handler-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sublime Handler-Prefix.pch"; sourceTree = "<group>"; };
+		C646060118551E6300844649 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C646060318551E6300844649 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C646060418551E6300844649 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C646060718551E6300844649 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C646060E18551E6300844649 /* Sublime HandlerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sublime HandlerTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C646060F18551E6300844649 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C646061618551E6300844649 /* Sublime HandlerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sublime HandlerTests-Info.plist"; sourceTree = "<group>"; };
+		C646061818551E6300844649 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C646061A18551E6300844649 /* Sublime_HandlerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sublime_HandlerTests.h; sourceTree = "<group>"; };
+		C646061B18551E6300844649 /* Sublime_HandlerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sublime_HandlerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C64605EB18551E6200844649 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C64605F218551E6300844649 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C646060A18551E6300844649 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C646061018551E6300844649 /* SenTestingKit.framework in Frameworks */,
+				C646061118551E6300844649 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C64605E518551E6200844649 = {
+			isa = PBXGroup;
+			children = (
+				C64605F718551E6300844649 /* Sublime Handler */,
+				C646061418551E6300844649 /* Sublime HandlerTests */,
+				C64605F018551E6300844649 /* Frameworks */,
+				C64605EF18551E6200844649 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C64605EF18551E6200844649 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C64605EE18551E6200844649 /* Sublime Handler.app */,
+				C646060E18551E6300844649 /* Sublime HandlerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C64605F018551E6300844649 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C64605F118551E6300844649 /* Cocoa.framework */,
+				C646060F18551E6300844649 /* SenTestingKit.framework */,
+				C64605F318551E6300844649 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C64605F318551E6300844649 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C64605F418551E6300844649 /* AppKit.framework */,
+				C64605F518551E6300844649 /* CoreData.framework */,
+				C64605F618551E6300844649 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C64605F718551E6300844649 /* Sublime Handler */ = {
+			isa = PBXGroup;
+			children = (
+				C646060318551E6300844649 /* AppDelegate.h */,
+				C646060418551E6300844649 /* AppDelegate.m */,
+				C646060618551E6300844649 /* MainMenu.xib */,
+				C64605F818551E6300844649 /* Supporting Files */,
+			);
+			path = "Sublime Handler";
+			sourceTree = "<group>";
+		};
+		C64605F818551E6300844649 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C64605F918551E6300844649 /* Sublime Handler-Info.plist */,
+				C64605FA18551E6300844649 /* InfoPlist.strings */,
+				C64605FD18551E6300844649 /* main.m */,
+				C64605FF18551E6300844649 /* Sublime Handler-Prefix.pch */,
+				C646060018551E6300844649 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C646061418551E6300844649 /* Sublime HandlerTests */ = {
+			isa = PBXGroup;
+			children = (
+				C646061A18551E6300844649 /* Sublime_HandlerTests.h */,
+				C646061B18551E6300844649 /* Sublime_HandlerTests.m */,
+				C646061518551E6300844649 /* Supporting Files */,
+			);
+			path = "Sublime HandlerTests";
+			sourceTree = "<group>";
+		};
+		C646061518551E6300844649 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C646061618551E6300844649 /* Sublime HandlerTests-Info.plist */,
+				C646061718551E6300844649 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C64605ED18551E6200844649 /* Sublime Handler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C646061F18551E6300844649 /* Build configuration list for PBXNativeTarget "Sublime Handler" */;
+			buildPhases = (
+				C64605EA18551E6200844649 /* Sources */,
+				C64605EB18551E6200844649 /* Frameworks */,
+				C64605EC18551E6200844649 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sublime Handler";
+			productName = "Sublime Handler";
+			productReference = C64605EE18551E6200844649 /* Sublime Handler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C646060D18551E6300844649 /* Sublime HandlerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C646062218551E6300844649 /* Build configuration list for PBXNativeTarget "Sublime HandlerTests" */;
+			buildPhases = (
+				C646060918551E6300844649 /* Sources */,
+				C646060A18551E6300844649 /* Frameworks */,
+				C646060B18551E6300844649 /* Resources */,
+				C646060C18551E6300844649 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C646061318551E6300844649 /* PBXTargetDependency */,
+			);
+			name = "Sublime HandlerTests";
+			productName = "Sublime HandlerTests";
+			productReference = C646060E18551E6300844649 /* Sublime HandlerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C64605E618551E6200844649 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = mostafaberg;
+			};
+			buildConfigurationList = C64605E918551E6200844649 /* Build configuration list for PBXProject "Sublime Handler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C64605E518551E6200844649;
+			productRefGroup = C64605EF18551E6200844649 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C64605ED18551E6200844649 /* Sublime Handler */,
+				C646060D18551E6300844649 /* Sublime HandlerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C64605EC18551E6200844649 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C64605FC18551E6300844649 /* InfoPlist.strings in Resources */,
+				C646060218551E6300844649 /* Credits.rtf in Resources */,
+				C646060818551E6300844649 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C646060B18551E6300844649 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C646061918551E6300844649 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C646060C18551E6300844649 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C64605EA18551E6200844649 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C64605FE18551E6300844649 /* main.m in Sources */,
+				C646060518551E6300844649 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C646060918551E6300844649 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C646061C18551E6300844649 /* Sublime_HandlerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C646061318551E6300844649 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C64605ED18551E6200844649 /* Sublime Handler */;
+			targetProxy = C646061218551E6300844649 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C64605FA18551E6300844649 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C64605FB18551E6300844649 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C646060018551E6300844649 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C646060118551E6300844649 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C646060618551E6300844649 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C646060718551E6300844649 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		C646061718551E6300844649 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C646061818551E6300844649 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C646061D18551E6300844649 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C646061E18551E6300844649 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C646062018551E6300844649 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sublime Handler/Sublime Handler-Prefix.pch";
+				INFOPLIST_FILE = "Sublime Handler/Sublime Handler-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C646062118551E6300844649 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sublime Handler/Sublime Handler-Prefix.pch";
+				INFOPLIST_FILE = "Sublime Handler/Sublime Handler-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C646062318551E6300844649 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sublime Handler.app/Contents/MacOS/Sublime Handler";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sublime Handler/Sublime Handler-Prefix.pch";
+				INFOPLIST_FILE = "Sublime HandlerTests/Sublime HandlerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C646062418551E6300844649 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sublime Handler.app/Contents/MacOS/Sublime Handler";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sublime Handler/Sublime Handler-Prefix.pch";
+				INFOPLIST_FILE = "Sublime HandlerTests/Sublime HandlerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C64605E918551E6200844649 /* Build configuration list for PBXProject "Sublime Handler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C646061D18551E6300844649 /* Debug */,
+				C646061E18551E6300844649 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C646061F18551E6300844649 /* Build configuration list for PBXNativeTarget "Sublime Handler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C646062018551E6300844649 /* Debug */,
+				C646062118551E6300844649 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C646062218551E6300844649 /* Build configuration list for PBXNativeTarget "Sublime HandlerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C646062318551E6300844649 /* Debug */,
+				C646062418551E6300844649 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C64605E618551E6200844649 /* Project object */;
+}

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Sublime Handler' target in the 'Sublime Handler' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
