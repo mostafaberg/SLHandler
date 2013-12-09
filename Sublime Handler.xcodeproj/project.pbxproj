@@ -18,6 +18,7 @@
 		C646061918551E6300844649 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C646061718551E6300844649 /* InfoPlist.strings */; };
 		C646061C18551E6300844649 /* Sublime_HandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C646061B18551E6300844649 /* Sublime_HandlerTests.m */; };
 		C646062718551F3100844649 /* preferencesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C646062618551F3100844649 /* preferencesManager.m */; };
+		C646062A185529A700844649 /* sublimeLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = C6460629185529A700844649 /* sublimeLauncher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		C646061B18551E6300844649 /* Sublime_HandlerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sublime_HandlerTests.m; sourceTree = "<group>"; };
 		C646062518551F3100844649 /* preferencesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = preferencesManager.h; sourceTree = "<group>"; };
 		C646062618551F3100844649 /* preferencesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = preferencesManager.m; sourceTree = "<group>"; };
+		C6460628185529A700844649 /* sublimeLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sublimeLauncher.h; sourceTree = "<group>"; };
+		C6460629185529A700844649 /* sublimeLauncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sublimeLauncher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				C64605F818551E6300844649 /* Supporting Files */,
 				C646062518551F3100844649 /* preferencesManager.h */,
 				C646062618551F3100844649 /* preferencesManager.m */,
+				C6460628185529A700844649 /* sublimeLauncher.h */,
+				C6460629185529A700844649 /* sublimeLauncher.m */,
 			);
 			path = "Sublime Handler";
 			sourceTree = "<group>";
@@ -269,6 +274,7 @@
 				C64605FE18551E6300844649 /* main.m in Sources */,
 				C646060518551E6300844649 /* AppDelegate.m in Sources */,
 				C646062718551F3100844649 /* preferencesManager.m in Sources */,
+				C646062A185529A700844649 /* sublimeLauncher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +359,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -380,7 +386,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -392,6 +398,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sublime Handler/Sublime Handler-Prefix.pch";
 				INFOPLIST_FILE = "Sublime Handler/Sublime Handler-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -404,6 +411,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sublime Handler/Sublime Handler-Prefix.pch";
 				INFOPLIST_FILE = "Sublime Handler/Sublime Handler-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -418,6 +426,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sublime Handler/Sublime Handler-Prefix.pch";
 				INFOPLIST_FILE = "Sublime HandlerTests/Sublime HandlerTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -433,6 +442,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sublime Handler/Sublime Handler-Prefix.pch";
 				INFOPLIST_FILE = "Sublime HandlerTests/Sublime HandlerTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;

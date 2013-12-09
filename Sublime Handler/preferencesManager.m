@@ -10,6 +10,21 @@
 
 @implementation preferencesManager
 
+@synthesize exitAfterLaunch, showsLogo, sublimePath;
+
+- (id) init
+{
+    self = [super init];
+
+    if(self)
+    {
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        [self loadSettingsWithDefaults:userDefaults];
+    }
+
+    return self;
+}
+
 - (void)storeSettingsWithDefaults:(NSUserDefaults*)defaults
 {
 
