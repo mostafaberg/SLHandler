@@ -26,17 +26,11 @@
     _preferences = [[preferencesManager alloc] init];
     _launcher    = [[sublimeLauncher alloc] init];
 
-    //TODO remove me
-    _launchedURL = [NSURL URLWithString:@"subl://open?url=file:///Users/Berg/.bash_history&line=484"];
-
     if(_launchedURL.absoluteString.length > 0)
     {
         [_launcher launchSublimeWithURL:_launchedURL];
-        exit(0);
-    }
-    else
-    {
-        [_launcher launchSublimeWithURL:_launchedURL];
+        if([_preferences exitAfterLaunch])
+            exit(0);
     }
 }
 

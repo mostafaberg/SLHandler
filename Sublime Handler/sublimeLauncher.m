@@ -34,26 +34,32 @@
     [paramsDictionary setObject:path forKey:@"url"];
 
     return paramsDictionary;
+
 }
 
 - (BOOL)launchSublimeWithURL:(NSURL*)anURL
 {
+
     NSDictionary *params = [self parseUrlParams:anURL];
+
     if(params)
     {
+
         NSString *arguments = [NSString stringWithFormat:@"%@:%@", [params objectForKey:@"url"], [params objectForKey:@"line"]];
         NSError *error;
+
         NSURL *sublUrl = [[NSWorkspace sharedWorkspace] URLForApplicationWithBundleIdentifier:@"com.sublimetext.3"];
 
         NSRunningApplication *subl = [[NSWorkspace sharedWorkspace] launchApplicationAtURL:sublUrl
                                                       options:NSWorkspaceLaunchAllowingClassicStartup
                                                 configuration:@{NSWorkspaceLaunchConfigurationArguments:@[arguments]}
                                                         error:&error];
-        NSLog(@"%@", subl);
+
         [subl activateWithOptions:NSApplicationActivateAllWindows];
 
     }
 
     return YES;
+
 }
 @end
