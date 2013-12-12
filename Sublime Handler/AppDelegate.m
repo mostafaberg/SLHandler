@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MainMenuController.h"
 
 @implementation AppDelegate
 
@@ -22,6 +23,8 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+
+    [(MainMenuController*)_window setup];
 
     _preferences = [[preferencesManager alloc] init];
     _launcher    = [[sublimeLauncher alloc] init];

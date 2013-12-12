@@ -10,6 +10,15 @@
 
 @implementation MainMenuController
 
-- (IBAction)saveButtonClicked:(id)sender {
+- (void)setup
+{
+    [_exitAfterLaunchCheckBox setState:NO];
+    [_showLogoCheckBox setState:NO];
+    [_versionSelector selectItem:[[_versionSelector itemArray] objectAtIndex:0]];
 }
+
+- (IBAction)saveButtonClicked:(id)sender
+{
+}
+
 @end

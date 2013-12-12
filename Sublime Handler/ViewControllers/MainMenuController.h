@@ -16,6 +16,6 @@
 @property (strong) IBOutlet NSTextField *versionLabel;
 
 - (IBAction)saveButtonClicked:(id)sender;
-
+- (void)setup;
 
 @end
