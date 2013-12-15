@@ -10,7 +10,7 @@
 
 @implementation preferencesManager
 
-@synthesize exitAfterLaunch, showsLogo, sublimePath;
+@synthesize exitAfterLaunch, showsLogo, sublimeVersion;
 
 - (id) init
 {
@@ -28,7 +28,7 @@
 - (void)storeSettingsWithDefaults:(NSUserDefaults*)defaults
 {
 
-    [defaults setObject:[self sublimePath] forKey:PREF_SUBLIME_PATH_KEY];
+    [defaults setInteger:[self sublimeVersion] forKey:PREF_SUBLIME_VERSION_KEY];
     [defaults setBool:[self exitAfterLaunch] forKey:PREF_EXIT_AFTER_LAUNCH_KEY];
     [defaults setBool:[self showsLogo] forKey:PREF_SHOW_LOGO_KEY];
 
@@ -39,7 +39,7 @@
 - (void)loadSettingsWithDefaults:(NSUserDefaults*)defaults
 {
 
-    [self setSublimePath:[defaults objectForKey:PREF_SUBLIME_PATH_KEY]];
+    [self setSublimeVersion:[defaults integerForKey:PREF_SUBLIME_VERSION_KEY]];
     [self setExitAfterLaunch:[defaults boolForKey:PREF_EXIT_AFTER_LAUNCH_KEY]];
     [self setShowsLogo:[defaults boolForKey:PREF_SHOW_LOGO_KEY]];
 

@@ -7,18 +7,33 @@
 //
 
 #import "MainMenuController.h"
+#import "preferencesManager.h"
 
 @implementation MainMenuController
 
 - (void)setup
 {
-    [_exitAfterLaunchCheckBox setState:NO];
-    [_showLogoCheckBox setState:NO];
-    [_versionSelector selectItem:[[_versionSelector itemArray] objectAtIndex:0]];
+
+    preferencesManager *aManager = [[preferencesManager alloc] init];
+
+    [_exitAfterLaunchCheckBox setState:[aManager exitAfterLaunch]];
+    [_showLogoCheckBox setState:[aManager showsLogo]];
+    NSInteger index = [aManager sublimeVersion] - 2;
+    [_versionSelector selectItem:[[_versionSelector itemArray] objectAtIndex:index]];
+
+    NSString *versionString = [NSString stringWithFormat:@"%@", [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]];
+    [_versionLabel setStringValue:[NSString stringWithFormat:@"Sublime Handler V %@", versionString]];
+
 }
 
 - (IBAction)saveButtonClicked:(id)sender
 {
+
+    preferencesManager *aManager = [[preferencesManager alloc] init];
+    [aManager setExitAfterLaunch:_exitAfterLaunchCheckBox.state];
+    [aManager setShowsLogo:_showLogoCheckBox.state];
+    [aManager setSublimeVersion:_versionSelector.selectedItem.tag];
+    [aManager storeSettingsWithDefaults:[NSUserDefaults standardUserDefaults]];
 }
 
 @end
