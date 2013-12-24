@@ -21,6 +21,7 @@
 		C646062A185529A700844649 /* sublimeLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = C6460629185529A700844649 /* sublimeLauncher.m */; };
 		C65BE5041857D0E30068A625 /* Sublime Text 2.icns in Resources */ = {isa = PBXBuildFile; fileRef = C65BE5031857D0E30068A625 /* Sublime Text 2.icns */; };
 		C65BE5071857D1C30068A625 /* MainMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = C65BE5061857D1C30068A625 /* MainMenuController.m */; };
+		C65F66ED186A280E00E716F7 /* Sublime Text 2.icns in Resources */ = {isa = PBXBuildFile; fileRef = C65F66EC186A280E00E716F7 /* Sublime Text 2.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		C65BE5031857D0E30068A625 /* Sublime Text 2.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Sublime Text 2.icns"; sourceTree = "<group>"; };
 		C65BE5051857D1C30068A625 /* MainMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuController.h; path = ViewControllers/MainMenuController.h; sourceTree = "<group>"; };
 		C65BE5061857D1C30068A625 /* MainMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuController.m; path = ViewControllers/MainMenuController.m; sourceTree = "<group>"; };
+		C65F66EC186A280E00E716F7 /* Sublime Text 2.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Sublime Text 2.icns"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		C64605E518551E6200844649 = {
 			isa = PBXGroup;
 			children = (
+				C65F66EC186A280E00E716F7 /* Sublime Text 2.icns */,
 				C65BE5021857D0E30068A625 /* Resources */,
 				C64605F718551E6300844649 /* Sublime Handler */,
 				C64605F818551E6300844649 /* Supporting Files */,
@@ -256,6 +259,7 @@
 				C646060218551E6300844649 /* Credits.rtf in Resources */,
 				C646060818551E6300844649 /* MainMenu.xib in Resources */,
 				C65BE5041857D0E30068A625 /* Sublime Text 2.icns in Resources */,
+				C65F66ED186A280E00E716F7 /* Sublime Text 2.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
