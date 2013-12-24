@@ -7,6 +7,7 @@
 //
 
 #import "sublimeLauncher.h"
+#import "preferencesManager.h"
 
 @implementation sublimeLauncher
 
@@ -39,16 +40,27 @@
 
 - (BOOL)launchSublimeWithURL:(NSURL*)anURL
 {
+    preferencesManager *manager = [[preferencesManager alloc] init];
+    NSInteger sublimeVersion = [manager sublimeVersion];
+    NSString *applicationIdentifier = [NSString stringWithFormat:@"com.sublimetext.%d", (int)sublimeVersion];
 
     NSDictionary *params = [self parseUrlParams:anURL];
 
     if(params)
     {
+        if(![[params objectForKey:@"command"] isEqualToString:@"open"])
+        {
+            return NO;
+        }
 
-        NSString *arguments = [NSString stringWithFormat:@"%@:%@", [params objectForKey:@"url"], [params objectForKey:@"line"]];
         NSError *error;
+        NSString *arguments = [NSString stringWithFormat:@"%@:%@:%@",
+                               [params objectForKey:@"url"],
+                               ([params objectForKey:@"line"] ? [params objectForKey:@"line"] : 0),
+                               ([params objectForKey:@"column"] ? [params objectForKey:@"column"] : 0)];
 
-        NSURL *sublUrl = [[NSWorkspace sharedWorkspace] URLForApplicationWithBundleIdentifier:@"com.sublimetext.3"];
+
+        NSURL *sublUrl = [[NSWorkspace sharedWorkspace] URLForApplicationWithBundleIdentifier:applicationIdentifier];
 
         NSRunningApplication *subl = [[NSWorkspace sharedWorkspace] launchApplicationAtURL:sublUrl
                                                       options:NSWorkspaceLaunchAllowingClassicStartup

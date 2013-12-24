@@ -16,12 +16,14 @@
 
     preferencesManager *aManager = [[preferencesManager alloc] init];
 
+    //Update menu items
     [_exitAfterLaunchCheckBox setState:[aManager exitAfterLaunch]];
     [_showLogoCheckBox setState:[aManager showsLogo]];
     NSInteger index = [aManager sublimeVersion] - 2;
     [_versionSelector selectItem:[[_versionSelector itemArray] objectAtIndex:index]];
 
     NSString *versionString = [NSString stringWithFormat:@"%@", [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]];
+
     [_versionLabel setStringValue:[NSString stringWithFormat:@"Sublime Handler V %@", versionString]];
 
 }
@@ -34,6 +36,9 @@
     [aManager setShowsLogo:_showLogoCheckBox.state];
     [aManager setSublimeVersion:_versionSelector.selectedItem.tag];
     [aManager storeSettingsWithDefaults:[NSUserDefaults standardUserDefaults]];
+
+    exit(1);
+
 }
 
 @end
