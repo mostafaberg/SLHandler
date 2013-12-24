@@ -1,7 +1,7 @@
 SLHandler
 =========
 
-a simple sublime launcher (any version) that has a (subl://) url scheme
+A simple sublime launcher (any version) that has a `subl://` url scheme
 
 URL Scheme
 =========
@@ -14,14 +14,13 @@ which translates to
 
     subl /etc/hosts:0:0
 
+Arguments are optional, only the `url` param is required.
 
 Usage
 =========
 
--Build and run app, it at must once to bind the url scheme.
--When the preferences window launches, choose your correct sublime version and save
--App will exit when you save
--open up terminal and type this `open 'subl://open?url=/etc/hosts&line=0&column=0'`
-
-Arguments are optional, only `url` is required.
+-    Build and run app, it at must once to bind the url scheme.
+-    When the preferences window launches, choose your correct sublime version and save
+-    App will exit when you save
+-    open up terminal and type this `open 'subl://open?url=/etc/hosts&line=0&column=0'`
 
