@@ -24,3 +24,7 @@ Usage
 -    App will exit when you save
 -    open up terminal and type this `open 'subl://open?url=/etc/hosts&line=0&column=0'`
 
+Attributions
+=========
+
+The Sublime Handler app icon was done by [Kreg Wallace](http://designkode.com/)
