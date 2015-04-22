@@ -27,4 +27,4 @@ Usage
 Attributions
 =========
 
-The Sublime Handler app icon was done by [Kreg Wallace](http://designkode.com/)
+The Sublime Handler app icon was done by [Kreg Wallace](https://profiles.wordpress.org/kreg/)
