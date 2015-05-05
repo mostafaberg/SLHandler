@@ -19,7 +19,7 @@ Arguments are optional, only the `url` param is required.
 Usage
 =========
 
--    Build and run app, it at must once to bind the url scheme.
+-    Build and run app, it must run once to bind to the url scheme.
 -    When the preferences window launches, choose your correct sublime version and save
 -    App will exit when you save
 -    open up terminal and type this `open 'subl://open?url=/etc/hosts&line=0&column=0'`
